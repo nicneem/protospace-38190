@@ -30,13 +30,13 @@ end
   end
 
   def update
-    if @prototype.update(prototype_params)
+    if @prototype.update(prototypes_params)
       redirect_to prototype_path(@prototype)
     else
       render :edit
     end
   end
-
+  
   def destroy
     if @prototype.destroy
       redirect_to root_path
